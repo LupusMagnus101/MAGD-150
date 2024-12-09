@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <!-- Include the P5.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js"></script>
+    <script src="https://p5play.org/v3/planck.min.js"></script>
+    <script src="https://p5play.org/v3/p5play.js"></script>
+
+    <!-- Link your CSS file -->
+    <link rel="stylesheet" href="page.css">
+
+    <!-- Link Project file -->
+
+
+    <!-- Linked Git hub https://github.com/LupusMagnus101/MAGD-150 -->
+    <script src="Project-v1.js"></script>
+</head>
+
+<body>
+    <div id="start-screen">
+        <h1>Welcome to the jump skySkraper!</h1>
+        <button id="start-button">Start</button>
+    </div>
+
+   
+
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const startScreen = document.getElementById("start-screen");
+
+            const startButton = document.getElementById("start-button");
+
+            startButton.addEventListener("click", () => {
+
+                // Hide the start screen
+
+                startScreen.style.display = "none";
+
+
+                // Show the canvas (and initialize P5.js if necessary)
+
+                const canvas = document.querySelector("canvas");
+
+                if (canvas) {
+
+                    canvas.style.display = "block";
+
+                }
+
+                
+            });
+        });
+    </script>
+</body>
+</html>
